@@ -18,5 +18,7 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
     ports:
       - "9090:8080"
